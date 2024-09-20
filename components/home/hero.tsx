@@ -1,9 +1,3 @@
-// Copyright Ayush Singh 2021,2022. All Rights Reserved.
-// Project: folio
-// Author contact: https://www.linkedin.com/in/alphaayush/
-// This file is licensed under the MIT License.
-// License text available at https://opensource.org/licenses/MIT
-
 import { EMAIL, MENULINKS, SOCIAL_LINKS, TYPED_STRINGS } from "../../constants";
 import React, { MutableRefObject, useEffect, useRef } from "react";
 import Typed from "typed.js";
@@ -82,8 +76,8 @@ const HeroSection = React.memo(() => {
   const renderHeroContent = (): React.ReactNode => (
     <div className={HERO_STYLES.CONTENT}>
       <div className="md:mb-4 mb-2">
-        <h2 className="text-4xl seq">Sup 👋🏻</h2>
-        <h1 className="text-3xl seq">I am Saivaibhav</h1>
+        <h1 className="text-5xl seq">Hello 👋</h1>
+        <h1 className="text-5xl seq md:mt-2">I am Saivaibhav</h1>
       </div>
       <p className="mb-4">
         <span className={HERO_STYLES.TYPED_SPAN} ref={typedSpanElement}></span>
@@ -102,7 +96,7 @@ const HeroSection = React.memo(() => {
         ></Button>
         <Button
           classes="ml-3"
-          type={ButtonTypes.PRIMARY}
+          type={ButtonTypes.WHITE}
           name="Let's Talk"
           href={SOCIAL_LINKS.topmate}
           otherProps={{
