@@ -61,17 +61,22 @@ const HeroSection = React.memo(() => {
   );
 
   const renderSocialLinks = (): React.ReactNode =>
-    Object.keys(SOCIAL_LINKS).map((el: keyof typeof SOCIAL_LINKS) => (
-      <a
-        href={SOCIAL_LINKS[el]}
-        key={el}
-        className={HERO_STYLES.SOCIAL_LINK}
-        rel="noreferrer"
-        target="_blank"
-      >
-        <Image src={`/social/${el}.svg`} alt={el} width={40} height={40} />
-      </a>
-    ));
+    Object.keys(SOCIAL_LINKS).map((el: keyof typeof SOCIAL_LINKS) => {
+      const href =
+        el === "gmail" ? `mailto:saivaibhavks2022@gmail.com` : SOCIAL_LINKS[el];
+
+      return (
+        <a
+          href={href}
+          key={el}
+          className={HERO_STYLES.SOCIAL_LINK}
+          rel="noreferrer"
+          target="_blank"
+        >
+          <Image src={`/social/${el}.svg`} alt={el} width={40} height={40} />
+        </a>
+      );
+    });
 
   const renderHeroContent = (): React.ReactNode => (
     <div className={HERO_STYLES.CONTENT}>
@@ -92,13 +97,13 @@ const HeroSection = React.memo(() => {
             target: "_blank",
             rel: "noreferrer",
           }}
-          href="/Ayush_Resume.pdf"
+          href="/Saivaibhav-KsResume.pdf"
         ></Button>
         <Button
           classes="ml-3"
           type={ButtonTypes.WHITE}
           name="Let's Talk"
-          href={SOCIAL_LINKS.topmate}
+          href="mailto:saivaibhavks2022@gmail.com"
           otherProps={{
             target: "_blank",
             rel: "noreferrer",
