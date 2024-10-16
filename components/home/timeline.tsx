@@ -172,7 +172,7 @@ const TimelineSection = ({ isDesktop }: IDesktop) => {
       : "";
 
     return `<foreignObject x=${foreignObjectX} y=${foreignObjectY} width=${foreignObjectWidth} 
-        height=${separation}>${logoString}<p class='${titleSizeClass}'>${title}</p>${subtitleString}</foreignObject>`;
+        height=${separation}><p class='${titleSizeClass}'>${title}</p>${subtitleString}</foreignObject>`;
   };
 
   const drawLine = (

@@ -56,19 +56,21 @@ export interface IProject {
 
 export const PROJECTS: IProject[] = [
   {
-    name: "FigGen - Figma to Code converter",
-    image: "/projects/figgen.jpg",
+    name: "Hirrd - Job Finding Application",
+    image: "/projects/hirrd.png",
     blurImage: "/projects/blur/figgen-blur.jpg",
-    description: "Pixel perfect HTML/Tailwind for Figma Auto layout designs.",
+    description:
+      "Fully Responsive Web Application designed intuitive employer dashboards for managing job postings, including real-time application tracking",
     gradient: ["#1F6582", "#1ABCFE"],
-    url: "https://www.figma.com/community/plugin/1065278044402066626",
+    url: "https://hirrd.vercel.app/",
     tech: ["typescript", "figma", "tailwind"],
   },
   {
-    name: "myOKR Website",
-    image: "/projects/myokr.jpg",
+    name: "covid19 Tracker",
+    image: "/projects/covid19.png",
     blurImage: "/projects/blur/myokr-blur.jpg",
-    description: "Marketing site for OKR Platform by huminos",
+    description:
+      "Site designed to promote public safety by providing users with reliable, real-time exposure alerts based on proximity",
     gradient: ["#153BB9", "#0E2C8B"],
     url: "https://www.huminos.com/",
     tech: ["react", "next", "gsap", "tailwind"],
@@ -110,15 +112,6 @@ export const PROJECTS: IProject[] = [
     tech: ["javascript", "sass", "svg", "gulp"],
   },
   {
-    name: "AKGEC - College Website",
-    image: "/projects/akgec.jpg",
-    blurImage: "/projects/blur/akgec-blur.jpg",
-    description: "Contributed in overall design and development",
-    gradient: ["#5E4C06", "#746528"],
-    url: "https://www.akgec.ac.in/",
-    tech: ["javascript", "html", "css"],
-  },
-  {
     name: "Alpha Aesthetics",
     image: "/projects/alpha.jpg",
     blurImage: "/projects/blur/alpha-blur.jpg",
@@ -134,33 +127,6 @@ export const PROJECTS: IProject[] = [
     description: "Dark mode dated from 2017 🔥",
     gradient: ["#142D46", "#2E4964"],
     url: "https://farewell18.ayushsingh.net/",
-    tech: ["javascript", "html", "css"],
-  },
-  {
-    name: "BDC 2018 Web Portal",
-    image: "/projects/bdc18.jpg",
-    blurImage: "/projects/blur/bdc18-blur.jpg",
-    description: "Built the portal from zero to production 🚀",
-    gradient: ["#470700", "#712A23"],
-    url: "https://bdc2018.ayushsingh.net/",
-    tech: ["javascript", "html", "css"],
-  },
-  {
-    name: "Scrolls 2017 - Website",
-    image: "/projects/scrolls.jpg",
-    blurImage: "/projects/blur/scrolls-blur.jpg",
-    description: "Built the portal from zero to production 🚀",
-    gradient: ["#685506", "#7B6921"],
-    url: "https://scrolls-17.ayushsingh.net/",
-    tech: ["angular", "html", "css"],
-  },
-  {
-    name: "Cardize - Visiting Cards",
-    image: "/projects/cardize.jpg",
-    blurImage: "/projects/blur/cardize-blur.jpg",
-    description: "First web project! Custom visiting card generator",
-    gradient: ["#552A04", "#614023"],
-    url: "https://cardize.ayushsingh.net/",
     tech: ["javascript", "html", "css"],
   },
 ];
@@ -205,6 +171,17 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     title: "2022",
     size: ItemSize.LARGE,
     shouldDrawLine: false,
+    alignment: Branch.LEFT,
+  },
+  {
+    type: NodeTypes.CHECKPOINT,
+    title: "Software Engineer - FrontEnd (Current)",
+    size: ItemSize.SMALL,
+    subtitle:
+      "Frontend Engineering @ Juspay, solving problems around Livingroom device performance",
+    image: "/timeline/juspay.png",
+    slideImage: "/timeline/juspay.png",
+    shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
   {
