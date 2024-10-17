@@ -465,7 +465,7 @@ const TimelineSection = ({ isDesktop }: IDesktop) => {
     >
       <Image
         className="w-full h-8"
-        src="/timeline/title-bar.svg"
+        src="/timeline/title-bar.png"
         alt="Title bar"
         width={644}
         height={34}

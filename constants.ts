@@ -175,13 +175,20 @@ export const TIMELINE: Array<TimelineNodeV2> = [
   },
   {
     type: NodeTypes.CHECKPOINT,
-    title: "Software Engineer - FrontEnd (Current)",
+    title: "Senior Software Engineer",
     size: ItemSize.SMALL,
     subtitle:
       "Frontend Engineering @ Juspay, solving problems around Livingroom device performance",
     image: "/timeline/juspay.png",
     slideImage: "/timeline/juspay.png",
     shouldDrawLine: true,
+    alignment: Branch.LEFT,
+  },
+  {
+    type: NodeTypes.CHECKPOINT,
+    title: "2022",
+    size: ItemSize.LARGE,
+    shouldDrawLine: false,
     alignment: Branch.LEFT,
   },
   {
