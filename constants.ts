@@ -168,7 +168,7 @@ export enum ItemSize {
 export const TIMELINE: Array<TimelineNodeV2> = [
   {
     type: NodeTypes.CHECKPOINT,
-    title: "2022",
+    title: "2024",
     size: ItemSize.LARGE,
     shouldDrawLine: false,
     alignment: Branch.LEFT,
@@ -177,10 +177,10 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     type: NodeTypes.CHECKPOINT,
     title: "Senior Software Engineer",
     size: ItemSize.SMALL,
-    subtitle:
-      "Frontend Engineering @ Juspay, solving problems around Livingroom device performance",
-    image: "/timeline/juspay.png",
-    slideImage: "/timeline/juspay.png",
+    subtitle: `Led frontend development, optimizing performance on Livingroom devices, building scalable web applications, and mentoring fellow team members. 
+      Worked closely with cross-functional teams to deliver high-impact features and improve UX.`,
+    image: "/timeline/accolite.jpg",
+    slideImage: "/timeline/accolite.jpg",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
@@ -193,12 +193,12 @@ export const TIMELINE: Array<TimelineNodeV2> = [
   },
   {
     type: NodeTypes.CHECKPOINT,
-    title: "Software Engineer - FrontEnd (Current)",
+    title: "Software Engineer",
     size: ItemSize.SMALL,
-    subtitle:
-      "Frontend Engineering @ Juspay, solving problems around Livingroom device performance",
-    image: "/timeline/juspay.png",
-    slideImage: "/timeline/juspay.png",
+    subtitle: `Focused on building and maintaining user-facing features for web applications for clinet - Juspay.
+       Enhanced UI/UX for Livingroom devices by implementing responsive design, improving performance, and collaborating with backend teams for seamless integration.`,
+    image: "/timeline/accolite.jpg",
+    slideImage: "/timeline/accolite.jpg",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
