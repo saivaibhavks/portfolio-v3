@@ -113,7 +113,7 @@ const CollaborationSection = () => {
       {renderTitle()}
 
       {renderSlidingText(
-        " Frontend Development  Motion Graphics ",
+        " Frontend Development  Web Performance Optimization ",
         "mt-6 md:mt-8 ui-right"
       )}
     </section>
