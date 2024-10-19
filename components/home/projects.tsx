@@ -132,7 +132,7 @@ const ProjectsSection = ({ isDesktop }: IDesktop) => {
       <h1 className="section-heading seq mt-2">My Works</h1>
       <h2 className="text-2xl md:max-w-3xl w-full seq max-w-sm mt-2">
         I have contributed in multiple projects ranging from Frontend
-        development, UI/UX design, Open Source, and Motion Graphics
+        development, UI/UX design and Open Source
       </h2>
     </div>
   );

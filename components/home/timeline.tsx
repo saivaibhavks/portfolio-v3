@@ -465,7 +465,7 @@ const TimelineSection = ({ isDesktop }: IDesktop) => {
     >
       <Image
         className="w-full h-12"
-        src="/timeline/title-bar.png"
+        src="/timeline/image.png"
         alt="Title bar"
         width={644}
         height={34}
@@ -500,10 +500,10 @@ const TimelineSection = ({ isDesktop }: IDesktop) => {
 
   const renderSectionTitle = (): React.ReactNode => (
     <div className="flex flex-col">
-      <p className="section-title-sm seq">MILESTONES</p>
-      <h1 className="section-heading seq mt-2">Timeline</h1>
+      <p className="section-title-sm seq">PROFESSIONAL JOURNEY</p>
+      <h1 className="section-heading seq mt-2">Experience</h1>
       <h2 className="text-2xl md:max-w-2xl w-full seq mt-2">
-        A quick recap of proud moments
+        A brief overview of my professional milestones
       </h2>
     </div>
   );

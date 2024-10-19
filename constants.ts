@@ -19,7 +19,7 @@ export const MENULINKS = [
     ref: "skills",
   },
   {
-    name: "Timeline",
+    name: "Experience",
     ref: "timeline",
   },
   {
@@ -29,10 +29,10 @@ export const MENULINKS = [
 ];
 
 export const TYPED_STRINGS = [
-  "I design and develop things",
-  "I develop modern frontend apps",
-  "I design dynamic user experience",
-  "I design and develop motion",
+  "I create user-friendly UIs",
+  "I solve complex problems",
+  "I build responsive web interfaces",
+  "I develop efficient frontend solutions",
 ];
 
 export const EMAIL = "ayush.singh.xda@gmail.com";
@@ -175,7 +175,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
   },
   {
     type: NodeTypes.CHECKPOINT,
-    title: "Senior Software Engineer",
+    title: "Senior Software Engineer @Accolite",
     size: ItemSize.SMALL,
     subtitle: `Led frontend development, optimizing performance on Livingroom devices, building scalable web applications, and mentoring fellow team members. 
       Worked closely with cross-functional teams to deliver high-impact features and improve UX.`,
@@ -193,7 +193,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
   },
   {
     type: NodeTypes.CHECKPOINT,
-    title: "Software Engineer",
+    title: "Software Engineer @Accolite",
     size: ItemSize.SMALL,
     subtitle: `Focused on building and maintaining user-facing features for web applications for clinet - Juspay.
        Enhanced UI/UX for Livingroom devices by implementing responsive design, improving performance, and collaborating with backend teams for seamless integration.`,
