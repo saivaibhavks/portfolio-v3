@@ -29,13 +29,15 @@ export const MENULINKS = [
 ];
 
 export const TYPED_STRINGS = [
-  "I create user-friendly UIs",
-  "I solve complex problems",
-  "I build responsive web interfaces",
-  "I develop efficient frontend solutions",
+  "Crafting seamless UIs",
+  "Bringing designs to life",
+  "Creating fluid interfaces",
+  "Elevating user journeys",
+  "Interactive, intuitive, impactful",
+  "Building scalable UIs",
 ];
 
-export const EMAIL = "ayush.singh.xda@gmail.com";
+export const EMAIL = "saivaibhavks2022@gmail.com";
 
 export const SOCIAL_LINKS = {
   linkedin: "https://www.linkedin.com/in/saivaibhav-k-s-5b28821a3/",

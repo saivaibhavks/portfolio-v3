@@ -71,7 +71,7 @@ const HeroSection = React.memo(() => {
           key={el}
           className={HERO_STYLES.SOCIAL_LINK}
           rel="noreferrer"
-          target="_blank"
+          target={el === "gmail" ? "_self" : "_blank"}
         >
           <Image src={`/social/${el}.svg`} alt={el} width={40} height={40} />
         </a>
