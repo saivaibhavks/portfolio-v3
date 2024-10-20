@@ -9,8 +9,12 @@ import Image from "next/image";
 import Button, { ButtonTypes } from "./button";
 
 const Footer = () => {
-  const renderSocialIcons = (): React.ReactNode => {
-    return Object.keys(SOCIAL_LINKS).map((el: keyof typeof SOCIAL_LINKS) => (
+  const renderSocialIcons = (): React.ReactNode => 
+  Object.keys(SOCIAL_LINKS).map((el: keyof typeof SOCIAL_LINKS) => {
+      const href =
+        el === "gmail" ? `mailto:saivaibhavks2022@gmail.com` : SOCIAL_LINKS[el];
+
+      return (
       <a
         href={SOCIAL_LINKS[el]}
         key={el}
@@ -20,8 +24,8 @@ const Footer = () => {
       >
         <Image src={`/social/${el}.svg`} alt={el} width={40} height={40} />
       </a>
-    ));
-  };
+  );
+    });
 
   const renderFooterContent = (): React.ReactNode => (
     <>
