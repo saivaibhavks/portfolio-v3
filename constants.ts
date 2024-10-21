@@ -61,8 +61,7 @@ export const PROJECTS: IProject[] = [
     name: "Hirrd - Job Finding Application",
     image: "/projects/hirrd.png",
     blurImage: "/projects/blur/figgen-blur.jpg",
-    description:
-      "Fully Responsive Web Application designed intuitive employer dashboards for managing job postings, including real-time application tracking",
+    description: "Employer dashboard with real-time job application tracking.",
     gradient: ["#1F6582", "#1ABCFE"],
     url: "https://hirrd.vercel.app/",
     tech: ["typescript", "figma", "tailwind"],
@@ -71,8 +70,7 @@ export const PROJECTS: IProject[] = [
     name: "covid19 Tracker",
     image: "/projects/covid19.png",
     blurImage: "/projects/blur/myokr-blur.jpg",
-    description:
-      "Site designed to promote public safety by providing users with reliable, real-time exposure alerts based on proximity",
+    description: "Real-time alerts for COVID-19 exposure based on proximity.",
     gradient: ["#153BB9", "#0E2C8B"],
     url: "https://www.huminos.com/",
     tech: ["react", "next", "gsap", "tailwind"],
@@ -190,7 +188,9 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     type: NodeTypes.CHECKPOINT,
     title: "2022",
     size: ItemSize.LARGE,
-    shouldDrawLine: false,
+    image: "/timeline/accolite.jpg",
+    slideImage: "/timeline/accolite.jpg",
+    shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
   {

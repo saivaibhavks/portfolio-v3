@@ -62,8 +62,8 @@ const HeroSection = React.memo(() => {
 
   const renderSocialLinks = (): React.ReactNode =>
     Object.keys(SOCIAL_LINKS).map((el: keyof typeof SOCIAL_LINKS) => {
-      const href =
-        el === "gmail" ? `mailto:saivaibhavks2022@gmail.com` : SOCIAL_LINKS[el];
+   const href = el === "gmail" ? `mailto:saivaibhavks2022&#39;s@gmail.com` : SOCIAL_LINKS[el];
+
 
       return (
         <a
@@ -82,7 +82,7 @@ const HeroSection = React.memo(() => {
     <div className={HERO_STYLES.CONTENT}>
       <div className="md:mb-4 mb-2">
         <h1 className="text-5xl seq">Hello 👋</h1>
-        <h1 className="text-5xl seq md:mt-2">I'm Saivaibhav</h1>
+    <h1 className="text-5xl seq md:mt-2">I&#39;m Saivaibhav</h1>
       </div>
       <p className="mb-4">
         <span className={HERO_STYLES.TYPED_SPAN} ref={typedSpanElement}></span>

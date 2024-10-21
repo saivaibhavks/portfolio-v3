@@ -439,7 +439,7 @@ const TimelineSection = ({ isDesktop }: IDesktop) => {
   };
 
   useEffect(() => {
-
+    // Generate and set the timeline svg
     setTimelineSvg(svgContainer, timelineSvg);
 
     const { timeline, duration }: { timeline: GSAPTimeline; duration: number } =
@@ -448,7 +448,7 @@ const TimelineSection = ({ isDesktop }: IDesktop) => {
     // Animation for Timeline SVG
     animateTimeline(timeline, duration);
   }, [
-
+    timelineSvg,
     svgContainer,
     svgWidth,
     rightBranchX,
