@@ -9,22 +9,22 @@ import Image from "next/image";
 import Button, { ButtonTypes } from "./button";
 
 const Footer = () => {
-  const renderSocialIcons = (): React.ReactNode => 
-  Object.keys(SOCIAL_LINKS).map((el: keyof typeof SOCIAL_LINKS) => {
+  const renderSocialIcons = (): React.ReactNode =>
+    Object.keys(SOCIAL_LINKS).map((el: keyof typeof SOCIAL_LINKS) => {
       const href =
         el === "gmail" ? `mailto:saivaibhavks2022@gmail.com` : SOCIAL_LINKS[el];
 
       return (
-      <a
-        href={SOCIAL_LINKS[el]}
-        key={el}
-        className="link hover:opacity-80 duration-300 md:px-2 px-1"
-        rel="noreferrer"
-        target="_blank"
-      >
-        <Image src={`/social/${el}.svg`} alt={el} width={40} height={40} />
-      </a>
-  );
+        <a
+          href={SOCIAL_LINKS[el]}
+          key={el}
+          className="link hover:opacity-80 duration-300 md:px-2 px-1"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <Image src={`/social/${el}.svg`} alt={el} width={40} height={40} />
+        </a>
+      );
     });
 
   const renderFooterContent = (): React.ReactNode => (
@@ -33,18 +33,7 @@ const Footer = () => {
         Connect with me on social media.
       </h1>
       <div className="flex mt-8">{renderSocialIcons()}</div>
-      <div className="flex mt-8">
-        <Button
-          classes="mr-3"
-          type={ButtonTypes.OUTLINE}
-          name="Resume"
-          otherProps={{
-            target: "_blank",
-            rel: "noreferrer",
-          }}
-          href="/resume.pdf"
-        ></Button>
-      </div>
+
       <h2 className="text-center text-sm sm:text-base mt-8">
         Designed and Developed with ❤️ by Saivaibhav
       </h2>
