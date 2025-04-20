@@ -168,19 +168,19 @@ export enum ItemSize {
 export const TIMELINE: Array<TimelineNodeV2> = [
   {
     type: NodeTypes.CHECKPOINT,
-    title: "2024",
+    title: "2025",
     size: ItemSize.LARGE,
     shouldDrawLine: false,
     alignment: Branch.LEFT,
   },
   {
     type: NodeTypes.CHECKPOINT,
-    title: "Senior Software Engineer @Accolite",
+    title: "SDE @ CARS24",
     size: ItemSize.SMALL,
     subtitle: `Led frontend development, optimizing performance on Livingroom devices, building scalable web applications, and mentoring fellow team members. 
       Worked closely with cross-functional teams to deliver high-impact features and improve UX.`,
-    image: "/timeline/accolite.jpg",
-    slideImage: "/timeline/accolite.jpg",
+    image: "/timeline/cars24.jpg",
+    slideImage: "/timeline/cars24.jpg",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
@@ -195,7 +195,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
   },
   {
     type: NodeTypes.CHECKPOINT,
-    title: "Software Engineer @Accolite",
+    title: "Technical Product Analyst @Accolite",
     size: ItemSize.SMALL,
     subtitle: `Focused on building and maintaining user-facing features for web applications for clinet - Juspay.
        Enhanced UI/UX for Livingroom devices by implementing responsive design, improving performance, and collaborating with backend teams for seamless integration.`,
