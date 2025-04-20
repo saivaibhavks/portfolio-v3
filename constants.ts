@@ -85,15 +85,6 @@ export const PROJECTS: IProject[] = [
     tech: ["figma", "angular", "gsap"],
   },
   {
-    name: "DL Unify",
-    image: "/projects/dl-unify.jpg",
-    blurImage: "/projects/blur/dl-unify-blur.jpg",
-    description: "Built the application from zero to production 🚀",
-    gradient: ["#003052", "#167187"],
-    url: "https://dlunify.com/",
-    tech: ["tailwind", "angular", "gsap", "figma"],
-  },
-  {
     name: "ngx-quill-upload",
     image: "/projects/ngx-quill-upload.jpg",
     blurImage: "/projects/blur/ngx-quill-upload-blur.jpg",
@@ -101,33 +92,6 @@ export const PROJECTS: IProject[] = [
     gradient: ["#3A0000", "#771E1E"],
     url: "https://www.npmjs.com/package/ngx-quill-upload",
     tech: ["npm", "angular", "typescript"],
-  },
-  {
-    name: "Huminos website",
-    image: "/projects/huminos.jpg",
-    blurImage: "/projects/blur/huminos-blur.jpg",
-    description: "Marketing site for Huminos bots for workplace by facebook",
-    gradient: ["#17007B", "#3A2C79"],
-    url: "https://bots.huminos.com/",
-    tech: ["javascript", "sass", "svg", "gulp"],
-  },
-  {
-    name: "Alpha Aesthetics",
-    image: "/projects/alpha.jpg",
-    blurImage: "/projects/blur/alpha-blur.jpg",
-    description: "Designed and developed the platform",
-    gradient: ["#172839", "#334659"],
-    url: "https://alpha-aesthetics.ayushsingh.net/",
-    tech: ["illustrator", "javascript", "angular"],
-  },
-  {
-    name: "Amantrya - Polling Web App",
-    image: "/projects/farewell18.jpg",
-    blurImage: "/projects/blur/farewell18-blur.jpg",
-    description: "Dark mode dated from 2017 🔥",
-    gradient: ["#142D46", "#2E4964"],
-    url: "https://farewell18.ayushsingh.net/",
-    tech: ["javascript", "html", "css"],
   },
 ];
 
@@ -175,10 +139,9 @@ export const TIMELINE: Array<TimelineNodeV2> = [
   },
   {
     type: NodeTypes.CHECKPOINT,
-    title: "SDE @ CARS24",
+    title: "SDE @CARS24",
     size: ItemSize.SMALL,
-    subtitle: `Led frontend development, optimizing performance on Livingroom devices, building scalable web applications, and mentoring fellow team members. 
-      Worked closely with cross-functional teams to deliver high-impact features and improve UX.`,
+    subtitle: `Part of the Platform Team (New Business), driving development across Insight360, Incentives, User Management, and Payments. Also built DevSpace—our internal developer workspace for streamlined support.`,
     image: "/timeline/cars24.jpg",
     slideImage: "/timeline/cars24.jpg",
     shouldDrawLine: true,
@@ -195,10 +158,9 @@ export const TIMELINE: Array<TimelineNodeV2> = [
   },
   {
     type: NodeTypes.CHECKPOINT,
-    title: "Technical Product Analyst @Accolite",
+    title: "Technical Product Analyst @Juspay",
     size: ItemSize.SMALL,
-    subtitle: `Focused on building and maintaining user-facing features for web applications for clinet - Juspay.
-       Enhanced UI/UX for Livingroom devices by implementing responsive design, improving performance, and collaborating with backend teams for seamless integration.`,
+    subtitle: `Worked on the UPI Dashboard team for Juspay, contributing to modules like Orders, Refunds, and Merchant Onboarding. Also played a key role in building the Namma Yatri project.`,
     image: "/timeline/juspay.png",
     slideImage: "/timeline/juspay.png",
     shouldDrawLine: true,
