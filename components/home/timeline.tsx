@@ -460,16 +460,17 @@ const TimelineSection = ({ isDesktop }: IDesktop) => {
 
   const renderSlides = (): React.ReactNode => (
     <div
-      className="max-w-full h-96 shadow-xl bg-gray-800 rounded-2xl overflow-hidden"
+      className="max-w-full h-96 shadow-xl bg-gray-800 rounded-2xl overflow-hidden ml-4"
       ref={screenContainer}
     >
       <Image
         className="w-full h-12"
-        src="/timeline/image2.png"
+        src="/timeline/img3.png"
         alt="Title bar"
-        width={644}
+        width={540}
         height={34}
       />
+
       <div className="relative h-full w-full -mt-2">
         <div className="absolute top-0 left-0 h-full w-full">
           {svgCheckpointItems.map((item, index) => (
