@@ -403,24 +403,14 @@ const TimelineSection = ({ isDesktop }: IDesktop) => {
   };
 
   useEffect(() => {
-    if (!svgContainer.current) return;
-
-    const updateSvg = () => {
-      if (svgContainer.current) setTimelineSvg(svgContainer, timelineSvg);
-    };
-
-    updateSvg();
-
-    const resizeObserver = new ResizeObserver(updateSvg);
-    resizeObserver.observe(svgContainer.current);
+    // Generate and set the timeline svg once so GSAP can animate the same DOM elements on scroll
+    setTimelineSvg(svgContainer, timelineSvg);
 
     const { timeline, duration }: { timeline: GSAPTimeline; duration: number } =
       initScrollTrigger();
 
-    // Animation for Timeline SVG
+    // Animation for Timeline SVG – yellow line reveals on scroll
     animateTimeline(timeline, duration);
-
-    return () => resizeObserver.disconnect();
   }, [
     timelineSvg,
     svgContainer,
