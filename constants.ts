@@ -1,5 +1,5 @@
 export const METADATA = {
-  title: "Portfolio | K S Saivaibhav",
+  title: "Saivaibhav",
   description:
     "I bridge the gap between design and development. I take responsibility to craft an aesthetic user experience using modern frontend architecture.",
   siteUrl: "https://ayushsingh.net/",
@@ -41,7 +41,7 @@ export const EMAIL = "saivaibhavks2022@gmail.com";
 
 export const SOCIAL_LINKS = {
   linkedin: "https://www.linkedin.com/in/saivaibhav-k-s-5b28821a3/",
-  github: "https://github.com/saivaibhavks",
+  github: "https://github.com/Saivaibhav-Brevo",
   twitter: "https://x.com/KsSaivaibhav",
   gmail: "saivaibhavks2022@gmail.com",
 };
@@ -109,8 +109,8 @@ export const SKILLS = {
     "html",
     "css",
   ],
-  userInterface: ["figma", "sketch", "illustrator", "photoshop"],
-  other: ["git", "webpack", "gulp", "lightroom", "aftereffects"],
+  userInterface: ["figma", "sketch"],
+  other: ["git", "webpack", "gulp"],
 };
 
 export enum Branch {
@@ -139,9 +139,29 @@ export const TIMELINE: Array<TimelineNodeV2> = [
   },
   {
     type: NodeTypes.CHECKPOINT,
+    title: "Software Engineer @Brevo",
+    size: ItemSize.SMALL,
+    subtitle: `Scaling pricing platform with modern UI ⚡`,
+    separation: 500,
+    image: "/timeline/brevo.png",
+    slideImage: "/timeline/brevo.png",
+    shouldDrawLine: true,
+    alignment: Branch.LEFT,
+  },
+  {
+    type: NodeTypes.CHECKPOINT,
+    title: "2024",
+    separation: 340,
+    size: ItemSize.LARGE,
+    shouldDrawLine: false,
+    alignment: Branch.LEFT,
+  },
+  {
+    type: NodeTypes.CHECKPOINT,
     title: "SDE @CARS24",
     size: ItemSize.SMALL,
-    subtitle: `Part of the Platform Team (New Business), driving development across Insight360, Incentives, User Management, and Payments. Also built DevSpace—our internal developer workspace for streamlined support.`,
+    subtitle: `Engineering platform UIs for operations 🚗`,
+    separation: 340,
     image: "/timeline/cars24.jpg",
     slideImage: "/timeline/cars24.jpg",
     shouldDrawLine: true,
@@ -158,9 +178,9 @@ export const TIMELINE: Array<TimelineNodeV2> = [
   },
   {
     type: NodeTypes.CHECKPOINT,
-    title: "Technical Product Analyst @Juspay",
+    title: "Software Engineer @Accolite",
     size: ItemSize.SMALL,
-    subtitle: `Worked on the UPI Dashboard team for Juspay, contributing to modules like Orders, Refunds, and Merchant Onboarding. Also played a key role in building the Namma Yatri project.`,
+    subtitle: `Fintech dashboards for payments ecosystem 💳`,
     image: "/timeline/juspay.png",
     slideImage: "/timeline/juspay.png",
     shouldDrawLine: true,
@@ -179,6 +199,8 @@ export interface CheckpointNode {
   slideImage?: string;
   shouldDrawLine: boolean;
   alignment: Branch;
+  /** Optional gap (px) below this node; 2024–2025 uses less, 2022–2024 uses more. */
+  separation?: number;
 }
 
 export interface BranchNode {
