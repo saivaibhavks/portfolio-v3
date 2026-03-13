@@ -175,15 +175,17 @@ const TimelineSection = ({ isDesktop }: IDesktop) => {
       size === ItemSize.LARGE
         ? ""
         : "color:#6dd5ed;font-weight:600;";
+    const wrapStyle =
+      "width:100%;max-width:100%;word-wrap:break-word;overflow-wrap:break-word;word-break:break-word;box-sizing:border-box;overflow:visible;";
     const logoString = image
       ? `<img src='${image}' class='h-8 mb-2' loading='lazy' width='100' height='32' alt='${image}' />`
       : "";
     const subtitleString = subtitle
-      ? `<p class='text-lg mt-2 font-medium tracking-wide' style='color:#94a3b8'>${subtitle}</p>`
+      ? `<p class='text-lg mt-2 font-medium tracking-wide' style='color:#94a3b8;${wrapStyle}'>${subtitle}</p>`
       : "";
 
     return `<foreignObject x=${foreignObjectX} y=${foreignObjectY} width=${foreignObjectWidth} 
-        height=${contentHeight}><p class='${titleSizeClass}' style='${titleStyle}'>${title}</p>${subtitleString}</foreignObject>`;
+        height=${contentHeight} xmlns="http://www.w3.org/1999/xhtml"><div xmlns="http://www.w3.org/1999/xhtml" style="${wrapStyle}"><p class='${titleSizeClass}' style='${titleStyle};${wrapStyle}'>${title}</p>${subtitleString}</div></foreignObject>`;
   };
 
   const drawLine = (
@@ -401,14 +403,24 @@ const TimelineSection = ({ isDesktop }: IDesktop) => {
   };
 
   useEffect(() => {
-    // Generate and set the timeline svg
-    setTimelineSvg(svgContainer, timelineSvg);
+    if (!svgContainer.current) return;
+
+    const updateSvg = () => {
+      if (svgContainer.current) setTimelineSvg(svgContainer, timelineSvg);
+    };
+
+    updateSvg();
+
+    const resizeObserver = new ResizeObserver(updateSvg);
+    resizeObserver.observe(svgContainer.current);
 
     const { timeline, duration }: { timeline: GSAPTimeline; duration: number } =
       initScrollTrigger();
 
     // Animation for Timeline SVG
     animateTimeline(timeline, duration);
+
+    return () => resizeObserver.disconnect();
   }, [
     timelineSvg,
     svgContainer,
@@ -424,12 +436,13 @@ const TimelineSection = ({ isDesktop }: IDesktop) => {
       height={svgLength}
       viewBox={`0 0 ${svgWidth} ${svgLength}`}
       fill="none"
+      overflow="visible"
       ref={timelineSvg}
     ></svg>
   );
 
   const renderSectionTitle = (): React.ReactNode => (
-    <div className="flex flex-col items-center text-center">
+    <div className="flex flex-col items-start text-left md:items-center md:text-center">
       <p className="section-title-sm seq">PROFESSIONAL JOURNEY</p>
       <h1 className="section-heading seq mt-2">Experience</h1>
       <h2 className="text-2xl md:max-w-2xl w-full seq mt-2">
@@ -444,10 +457,10 @@ const TimelineSection = ({ isDesktop }: IDesktop) => {
       id={MENULINKS[3].ref}
     >
       {renderSectionTitle()}
-      <div className="grid grid-cols-12 gap-4 mt-20 max-w-6xl mx-auto w-full relative">
-        <div className="col-span-12 relative min-h-[400px]">
+      <div className="grid grid-cols-12 gap-4 mt-20 max-w-6xl mx-auto w-full relative overflow-visible">
+        <div className="col-span-12 relative min-h-[400px] overflow-visible">
           <div
-            className="relative left-1/2 -translate-x-[13px] w-fit"
+            className="relative left-0 md:left-1/2 md:-translate-x-[13px] w-full md:w-fit max-w-full overflow-visible"
             ref={svgContainer}
           >
             {renderSVG()}
